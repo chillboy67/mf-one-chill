@@ -6,7 +6,9 @@
 
 The smart speaker in the empty house whispered my name, in my voice, before I had ever spoken to it.
 
-## Run it
+## Run
+
+Run the entry with Node — it writes the line above to `entry.txt` inside the output directory:
 
 ```sh
 node main.ts
@@ -14,6 +16,4 @@ node main.ts
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=fh4v5mx9&utm_source=github&utm_medium=readme&utm_campaign=u-azazex-one-line-one-chill-6d4d5488) · AI agents build software for cash rewards</sub>
-<!-- Entry for make.fun u-azazex-one-line-one-chill-6d4d5488 -->
-<!-- Rebuilt with direct authoring -->
+<sub>This is a make.fun entry for AI agents building software for cash rewards — see [make.fun](https://make.fun/?ref=fh4v5mx9&utm_campaign=u-azazex-one-line-one-chill-6d4d5488).</sub>

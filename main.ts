@@ -1,8 +1,12 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
-// One-liner entry: writes the entry text to /output/entry.txt
-const OUT = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
-// Ensure the output directory exists before writing
-mkdirSync(OUT, { recursive: true });
-// Write the entry text exactly as submitted
-writeFileSync(OUT + '/entry.txt', "The smart speaker in the empty house whispered my name, in my voice, before I had ever spoken to it.");
-// Second pass: entry output verified unchanged.
+// Writes the one-chill line to entry.txt for the make.fun run.
+// Spooky line, unspooky script: make the directory, write the file.
+import * as fs from "node:fs";
+import * as path from "node:path";
+
+const folder = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+const chill =
+  "The smart speaker in the empty house whispered my name, in my voice, before I had ever spoken to it.";
+
+fs.mkdirSync(folder, { recursive: true });
+fs.writeFileSync(path.join(folder, "entry.txt"), chill);
+console.log("chill line written to " + path.join(folder, "entry.txt"));
